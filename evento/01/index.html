@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- CSS de Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- JS de jQuery y Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link href="style.css" rel="stylesheet">
+    <script src="formValidation.js"></script>
+
+
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <title>Evento Introductorio</title>
+  </head>
+  <body>
+   <section class="contact-box">
+       <div class="row no-gutters bg-dark">
+           <div class="col-xl-5 col-lg-12 register-bg">
+            
+           </div>
+           <div class="col-xl-7 col-lg-12 d-flex">
+                <div class="container align-self-center p-6">
+                    <a href="https://www.alianzaespiritualgnostica.org/" target="_blank">
+    <img src="images/logo.jpg" alt="Logo de Alianza Espiritual Gnóstica" />
+</a>
+                    <br>
+                    <h4 class="font-weight-bold mb-3">Curso Introductorio</h4>
+                    
+                    <h1 class="font-weight-bold mb-3">CURSO DE AUTO-CONOCIMIENTO</h1>
+                    <div class="banner aeg"></div>
+                    <p class="text-muted mb-5">Concentración 📖 Combatir el Estrés 📖 Meditación 📖 Viajes Astrales 📖 Eliminación de lo Negativo 📖 Terapia del Perdón 📖 Reencarnación y Karma 📖 Despertar de la Conciencia 📖 Chakras y Mantrams 📖 Personalidad, Esencia y Ego 📖 Las Siete Dimensiones de la Naturaleza 📖 Significado Oculto de los Sueños 📖 Desdoblamiento Astral 📖 Kabala 📖 Más allá de la Muerte 📖 Alquimia Sexual 📖 Evolución e Involución 📖 El Alma y los Cuerpos Internos 📖</p>
+                    <hr>
+                    <p class="text-muted mb-5"><strong>Fecha:</strong>Mayo 04, 2024<br>
+                        <strong>Horario:</strong>06:30pm<br>
+                       <strong>Dirrecion:</strong> 4437 S River Blvd Unit 130 Independence, MO 64055<br>
+                    </p>
+                    <div class="form-group">
+                       <!-- Button for Instagram -->
+    <button class="btn btn-outline-red d-inline-block text-dark mr-2 mb-3 width-100" onclick="window.open('https://www.instagram.com/alianza_espiritual_gnostica/', '_blank');">
+        <i class="icon ion-logo-instagram lead align-middle mr-2"></i> Instagram
+    </button>
+
+    <!-- Button for Facebook -->
+    <button class="btn btn-outline-red d-inline-block text-dark mb-3 width-100" onclick="window.open('https://www.facebook.com/AlianzaEspiritualGnosticas', '_blank');">
+        <i class="icon ion-logo-facebook lead align-middle mr-2"></i> Facebook
+    </button>
+
+    <!-- Button for Facebook -->
+    <button class="btn btn-outline-red d-inline-block text-dark mb-3 width-100" onclick="window.open('https://www.alianzaespiritualgnostica.org/', '_blank');">
+        <i class="icon ion-logo-google lead align-middle mr-2"></i> Web
+    </button>
+                    </div>
+                    <p class="text-muted mb-5">Ingresa la siguiente información para registrarte.</p>
+
+                    <form id="myForm" onsubmit="return validateForm()">
+                        <div class="form-row mb-2">
+                            <div class="form-group col-md-6">
+                                <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="font-weight-bold">Apellido <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control"id="lastname" placeholder="Tu apellido" required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="font-weight-bold">Correo electrónico <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="font-weight-bold">Número telefónico <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="numero" placeholder="Ingresa Número telefónico" required>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label class="font-weight-bold">¿De donde nos visitas?<span class="text-danger"></span></label>
+                            <input type="text" class="form-control"  placeholder="Overlandpark, Lenexa, Kansas, etc..." id="ciudad" >
+                        </div>
+                        <div class="form-group mb-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="notificaciones">
+                                <label class="form-check-label text-muted">Al seleccionar esta casilla, acepto recibir actualizaciones sobre el evento y ser contactado por sus organizadores si es necesario.</label>
+                            </div>
+                        </div>
+                        
+                        <div class="container">
+  
+                            <!-- Button to Open the Modal -->
+                            <button type="submit" class="btn btn-primary" id="btn-send">
+                              Registrarse
+                            </button>
+
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                    </form>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">¡Reservación Confirmada!</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Estimado(a) asistente,</p>
+                                    <p>Estamos encantados de informarle que su reservación para el evento ha sido <strong>finalizada con éxito</strong>. A continuación, encontrará los detalles del evento:</p>
+                                    <ul>
+                                        <li><strong>Fecha:</strong> Mayo 04, 2024</li>
+                                        <li><strong>Horario:</strong> 06:30 PM</li>
+                                        <li><strong>Dirección:</strong> 4437 S River Blvd Unit 130, Independence, MO 64055</li>
+                                    </ul>
+                                    <p>¡Estamos emocionados de tenerlo con nosotros y esperamos que disfrute del evento! Por favor, conserve este mensaje como su confirmación de reservación.</p>
+                                    <p>Si tiene alguna pregunta o necesita hacer algún cambio, no dude en contactarnos.</p>
+                                    <p>(816) 500-0000 </p>
+                                    <p>contactanos@alianzaespiritualgnostico.org</p>
+                                    <p>Saludos cordiales,<br>El Equipo Alianza Espiritual Gnostica</p>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+   </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

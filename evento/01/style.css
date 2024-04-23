@@ -1,0 +1,107 @@
+
+.banner {
+    height: 10px;
+    width: auto;
+    margin: 20px;
+  }
+  
+  .aeg { 
+    background: linear-gradient(to right, #DD3E32 0, #DD3E32 33%, #47A8DF 33%, #47A8DF 66%, #F9D428 66%, #F9D428 100%); 
+  }
+  
+:root {
+    --color-dark: White;
+    --color-dark-x: #353535;
+    --color-dark-xx: #1f232b;
+    --color-light: black;
+    --color-grey: black;
+    --color-red: #DD3E32;
+    --color-blue: #47A8DF;
+    --color-yellow: #F9D428;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color:white;
+    color: var(--color-light);
+    letter-spacing: .05rem;
+}
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+.contact-box {
+    padding: 3rem;
+    background: #f0f3f6;
+    border-radius: 15px;
+    box-shadow: 7px 7px 25px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+
+
+.form-control {
+    background-color: #F0F0F0;
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+
+.register-bg {
+    background-image: url('images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.testiomonial {
+    bottom: 10px
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
